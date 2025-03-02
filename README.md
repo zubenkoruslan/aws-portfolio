@@ -3,7 +3,7 @@
 A static website hosted on AWS S3 with CloudFront distribution was built as part of my AWS Cloud Solutions Architect certification prep.
 
 ## Overview
-- **S3 Bucket**: Hosts `index.html` with a public bucket policy.
+- **S3 Bucket**: Hosts `index.html` & `error.html` with a public bucket policy.
 - **CloudFront**: Distributes the site globally with HTTPS.
 - **Tech**: HTML, CSS, AWS S3, CloudFront.
 
