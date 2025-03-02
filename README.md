@@ -10,9 +10,11 @@ A static website hosted on AWS S3 with CloudFront distribution was built as part
 ## Live Demo
 [Visit the site](https://ruslanzubenko.com)
 
-## Next Steps
-- Add screenshot of the live site.
-- Include architecture diagram.
+## Screenshot
+![Website Screenshot](./website-screenshot.png)
+
+## Architecture Diagram
+![Architecture Diagram](./architecture-diagram.png)
 
 ## Author
 Ruslan Zubenko | [LinkedIn](https://www.linkedin.com/in/zubenkoruslan)
