@@ -4,37 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ruslan Zubenko | Cloud Architect</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Social Icons -->
-    <aside class="social-links">
-        <ul>
-            <li><a href="https://linkedin.com/in/zubenkoruslan" target="_blank" class="social-icon">Ln</a></li>
-            <li><a href="https://github.com/zubenkoruslan" target="_blank" class="social-icon">Gh</a></li>
-        </ul>
-    </aside>
+    <header>
+        <div class="hero">
+            <img src="media/profile-pic.jpeg" alt="Ruslan Zubenko" class="profile-pic">
+            <h1>Ruslan Zubenko</h1>
+            <p class="tagline">Crafting the Future with Cloud Solutions</p>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/zubenkoruslan" target="_blank">LinkedIn</a>
+                <a href="https://github.com/zubenkoruslan" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </header>
 
-    <!-- Navigation -->
-    <nav class="side-nav">
-        <ul>
-            <li><a href="index.html" class="active">01. Home</a></li>
-            <li><a href="about.html">02. About</a></li>
-            <li><a href="projects.html">03. Projects</a></li>
-            <li><a href="certifications.html">04. Certifications</a></li>
-        </ul>
-    </nav>
-
-    <!-- Main Content -->
-    <main class="content">
-        <section class="intro">
-            <h1>Hi, I’m Ruslan Zubenko</h1>
-            <h2>I architect cloud solutions.</h2>
+    <main>
+        <!-- About Section -->
+        <section class="about" id="about">
+            <h2>About</h2>
             <p>
-                I’m a Cloud Architect and IT Support Specialist based in London, UK, and Albufeira, Portugal. Currently pursuing my <span class="highlight">AWS Certified Solutions Architect – Associate</span> certification, I design scalable, cost-effective systems with AWS. Check out my projects and let’s connect!
+                I’m a Cloud Architect and IT Support Specialist passionate about building scalable, efficient systems. Currently pursuing my <span class="highlight">AWS Certified Solutions Architect – Associate</span> certification, I bring expertise in <span class="highlight">AWS (S3, CloudFront, Lambda)</span>, HTML/CSS, JavaScript, and more from roles at Printful and Seabourn. Fluent in four languages, I’m based in London, UK, and Albufeira, Portugal—ready to architect the cloud, one solution at a time.
             </p>
         </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <img src="media/architecture-diagram.png" alt="Static Website Project">
+                <h3>Static Website on AWS</h3>
+                <p>
+                    A minimalist portfolio hosted on S3, accelerated with CloudFront, and auto-deployed via GitHub Actions.<br>
+                    <strong>AWS Services:</strong> S3, CloudFront, IAM.<br>
+                    <a href="https://github.com/zubenkoruslan/aws-portfolio" target="_blank">View on GitHub</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="certifications" id="certifications">
+            <h2>Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <img src="media/aws-cpf-cert.png" alt="AWS Certified Cloud Practitioner">
+                    <p>AWS Certified Cloud Practitioner (2025)</p>
+                </div>
+                <div class="cert-card">
+                    <img src="media/aws-saa-cert.png" alt="AWS Certified Solutions Architect – Associate">
+                    <p>AWS Certified Solutions Architect – Associate (In Progress)</p>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <p>&copy; 2025 Ruslan Zubenko</p>
+    </footer>
+
+    <script>
+        // Fade-in animation on scroll
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            sections.forEach(section => observer.observe(section));
+        });
+    </script>
 </body>
 </html>
