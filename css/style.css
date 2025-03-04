@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background: #333333; /* Lighter charcoal */
+    background: #1A1A1A;
     color: #FFFFFF;
     line-height: 1.6;
     overflow-x: hidden;
@@ -15,7 +15,7 @@ body {
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #333333, #4A4A4A); /* Lighter gradient */
+    background: linear-gradient(135deg, #1A1A1A, #2A2A2A);
     padding: 60px 20px;
     text-align: center;
     position: relative;
@@ -52,24 +52,15 @@ h1 {
     margin-bottom: 20px;
 }
 
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.social-icon {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    line-height: 24px;
-    text-align: center;
-    font-size: 1.2em;
+.social-links a {
     color: #4A90E2;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1em;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.social-icon:hover {
+.social-links a:hover {
     color: #FFFFFF;
     transform: translateY(-3px);
 }
@@ -122,7 +113,7 @@ p {
 
 /* Projects */
 .project-card {
-    background: #F5F5F5; /* Light grey cards */
+    background: #2A2A2A;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -135,20 +126,15 @@ p {
 }
 
 .project-card img {
-    max-width: 80%;
-    display: block;
-    margin: 0 auto 15px; /* Centered */
+    max-width: 100%;
     border-radius: 5px;
+    margin-bottom: 15px;
 }
 
 .project-card h3 {
     font-size: 1.5em;
-    color: #333333; /* Matches background for contrast */
+    color: #FFFFFF;
     margin-bottom: 10px;
-}
-
-.project-card p {
-    color: #666666; /* Darker grey for text */
 }
 
 .project-card a {
@@ -157,7 +143,7 @@ p {
 }
 
 .project-card a:hover {
-    color: #333333;
+    color: #FFFFFF;
 }
 
 /* Certifications */
@@ -168,7 +154,7 @@ p {
 }
 
 .cert-card {
-    background: #F5F5F5;
+    background: #2A2A2A;
     padding: 15px;
     border-radius: 10px;
     text-align: center;
@@ -187,14 +173,13 @@ p {
 
 .cert-card p {
     font-size: 0.9em;
-    color: #666666;
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background: #333333;
+    background: #1A1A1A;
     color: #E0E0E0;
     font-size: 0.9em;
 }
