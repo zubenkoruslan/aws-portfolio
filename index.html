@@ -3,75 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruslan Zubenko | Cloud Architect</title>
+    <title>Ruslan Zubenko | Cloud Architect Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        
-        body {
-            margin: 0;
-            font-family: 'Roboto', sans-serif; 
-            background: #0f1c2e; 
-            color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-        .container {
-            background: #232f3e; 
-            border-radius: 10px;
-            padding: 40px;
-            max-width: 600px;
-            text-align: center;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-        }
-        h1 {
-            font-size: 2.5em;
-            margin: 0;
-            color: #ff9900; 
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-weight: 700;
-        }
-        .title {
-            font-size: 1.2em;
-            color: #d9d9d9; 
-            margin: 10px 0 20px;
-        }
-        p {
-            font-size: 1em;
-            line-height: 1.6;
-            color: #e6e6e6; 
-        }
-        .highlight {
-            color: #ff9900; 
-            font-weight: bold;
-        }
-        a {
-            color: #ff9900; 
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        a:hover {
-            color: #fcba03; 
-        }
-        .footer {
-            margin-top: 20px;
-            font-size: 0.9em;
-            color: #b3b3b3; 
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Ruslan Zubenko</h1>
-        <div class="title">Certified Cloud Practitioner | Cloud Architect in the making</div>
-        <p>
-            Hey there! I’m a highly motivated tech professional with a knack for <span class="highlight">cloud architecture</span>. Currently, I’m sharpening my skills for the <span class="highlight">AWS Cloud Solutions Architect certification</span></p>
-        <div class="footer">
-            Connect with me on <a href="https://www.linkedin.com/in/zubenkoruslan" target="_blank">LinkedIn</a> & on <a href="https://github.com/zubenkoruslan" target="_blank">Github</a> | Based in London, UK & Albufeira, Portugal
-            <p>Auto-deployed on March 2, 2025</p>
-        </div>
+        <!-- Professional Overview -->
+        <header>
+            <img src="https://via.placeholder.com/150" alt="Ruslan Zubenko Photo">
+            <h1>Ruslan Zubenko</h1>
+            <div class="title">Cloud Architect | IT Support Specialist</div>
+            <div class="links">
+                <a href="https://linkedin.com/in/zubenkoruslan" target="_blank">LinkedIn</a>
+                <a href="https://github.com/yourusername/aws-static-website" target="_blank">GitHub</a>
+            </div>
+        </header>
+
+        <!-- Overview Section -->
+        <section class="overview">
+            <h2>Professional Overview</h2>
+            <p>
+                Hi, I’m Ruslan—a tech enthusiast with a passion for <span class="highlight">cloud architecture</span> and IT support. I’m currently pursuing my <span class="highlight">AWS Certified Solutions Architect – Associate</span> certification to deepen my expertise in designing scalable, cost-effective solutions. With skills in <span class="highlight">AWS (S3, CloudFront, Lambda)</span>, HTML/CSS, JavaScript, and more, I bring hands-on experience from roles at Printful and Seabourn. My goal? To architect innovative cloud solutions that drive efficiency and impact. Based in London, UK, and Albufeira, Portugal—fluent in four languages!
+            </p>
+        </section>
+
+        <!-- Project Showcase -->
+        <section class="projects">
+            <h2>Project Showcase</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="website-screenshot.png" alt="Static Website Screenshot">
+                    <h3>Static Website on S3 & CloudFront</h3>
+                    <p>
+                        <strong>Problem:</strong> Needed a low-cost, scalable way to host a personal portfolio.<br>
+                        <strong>Solution:</strong> Built a static site hosted on S3, distributed via CloudFront with auto-deployment using GitHub Actions.<br>
+                        <strong>AWS Services:</strong> S3 (storage), CloudFront (CDN), IAM (access control).<br>
+                        <strong>Deployment:</strong> Set up S3 bucket, enabled static hosting, configured CloudFront, and automated updates.<br>
+                        <a href="https://github.com/yourusername/aws-static-website" target="_blank">GitHub Repo</a>
+                    </p>
+                </div>
+                <!-- Add more projects here as you build them -->
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li>AWS Certified Cloud Practitioner (2025) – Validated foundational AWS knowledge.</li>
+                <li>AWS Certified Solutions Architect – Associate (In Progress) – Targeting March 2025.</li>
+            </ul>
+        </section>
     </div>
 </body>
 </html>
