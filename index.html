@@ -51,10 +51,27 @@
         <section class="certifications">
             <h2>Certifications</h2>
             <ul>
-                <li><img src="media/aws-cpf-cert.png" alt="AWS Certified Cloud Practitioner Certification"></li>
-                <li><img src="media/aws-saa-cert.png" alt="AWS Certified Solutions Architect – Associate Certification Loading"></li>
+                <li>
+                    <img src="media/aws-cpf-cert.png" alt="AWS Certified Cloud Practitioner">
+                    <span>AWS Certified Cloud Practitioner (2025)</span>
+                </li>
+                <li class="saa-cert">
+                    <img src="media/aws-saa-cert.png" alt="AWS Certified Solutions Architect – Associate">
+                    <span>AWS Certified Solutions Architect – Associate (In Progress)</span>
+                    <div class="loading-bar"></div>
+                </li>
             </ul>
         </section>
     </div>
+
+    <!-- JavaScript for Loading Animation -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const loadingBar = document.querySelector('.loading-bar');
+            if (loadingBar) {
+                loadingBar.style.animation = 'loading 2s infinite ease-in-out';
+            }
+        });
+    </script>
 </body>
 </html>

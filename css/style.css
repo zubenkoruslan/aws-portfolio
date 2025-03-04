@@ -50,6 +50,7 @@ h1 {
     color: #ff9900;
     text-decoration: none;
     margin: 0 10px;
+    transition: color 0.3s ease;
 }
 
 .links a:hover {
@@ -97,14 +98,16 @@ h2 {
 }
 
 .project-card img {
-    max-width: 100%;
+    max-width: 80%; /* Smaller, centered image */
+    display: block;
+    margin: 0 auto 10px; /* Centered */
     border-radius: 5px;
-    margin-bottom: 10px;
 }
 
 .project-card h3 {
     color: #ff9900;
     font-size: 1.3em;
+    text-align: center;
 }
 
 .project-card p {
@@ -113,6 +116,7 @@ h2 {
 
 .project-card a {
     color: #ff9900;
+    transition: color 0.3s ease;
 }
 
 .project-card a:hover {
@@ -131,21 +135,61 @@ h2 {
     padding: 15px;
     border-radius: 5px;
     flex: 1 1 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative; /* For loading bar positioning */
+}
+
+.certifications li:hover {
+    transform: scale(1.05); /* Subtle zoom on hover, inspired by Brittany */
+    box-shadow: 0 5px 15px rgba(255, 153, 0, 0.2);
+}
+
+.certifications li img {
+    max-width: 100px; /* Smaller images */
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.certifications li span {
+    font-size: 0.9em;
+    display: block;
+}
+
+.saa-cert {
+    position: relative;
+}
+
+.loading-bar {
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
+    right: 15px;
+    height: 4px;
+    background: rgba(255, 153, 0, 0.3);
+    overflow: hidden;
+}
+
+.loading-bar::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: #ff9900;
+    animation: loading 2s infinite ease-in-out;
+}
+
+@keyframes loading {
+    0% { transform: translateX(-100%); }
+    50% { transform: translateX(200%); }
+    100% { transform: translateX(200%); }
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .container {
-        padding: 10px;
-    }
-    header img {
-        width: 100px;
-        height: 100px;
-    }
-    h1 {
-        font-size: 2em;
-    }
-    .project-grid {
-        grid-template-columns: 1fr;
-    }
+    .container { padding: 10px; }
+    header img { width: 100px; height: 100px; }
+    h1 { font-size: 2em; }
+    .project-grid { grid-template-columns: 1fr; }
+    .certifications li { flex: 1 1 100%; }
 }
