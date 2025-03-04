@@ -15,9 +15,9 @@ body {
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #1A1A1A, #2A2A2A, #1A1A1A, #4A90E2); /* Subtle blue hint */
-    background-size: 200% 200%; /* Larger size for smooth animation */
-    animation: gradientLoop 10s ease-in-out infinite; /* Slow, subtle loop */
+    background: linear-gradient(135deg, #1A1A1A, #2A2A2A, #1A1A1A, #204269); /* Subtle blue hint */
+    background-size: 400% 400%; /* Larger size for smooth animation */
+    animation: gradientLoop 15s ease-in infinite; /* Slow, subtle loop */
     padding: 60px 20px;
     text-align: center;
     position: relative;
