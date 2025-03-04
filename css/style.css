@@ -98,9 +98,9 @@ h2 {
 }
 
 .project-card img {
-    max-width: 80%; /* Smaller, centered image */
+    max-width: 80%;
     display: block;
-    margin: 0 auto 10px; /* Centered */
+    margin: 0 auto 10px;
     border-radius: 5px;
 }
 
@@ -137,16 +137,17 @@ h2 {
     flex: 1 1 300px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative; /* For loading bar positioning */
+    position: relative; /* Ensures this is the positioning context */
+    overflow: hidden; /* Contains the loading bar */
 }
 
 .certifications li:hover {
-    transform: scale(1.05); /* Subtle zoom on hover, inspired by Brittany */
+    transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(255, 153, 0, 0.2);
 }
 
 .certifications li img {
-    max-width: 100px; /* Smaller images */
+    max-width: 100px;
     display: block;
     margin: 0 auto 10px;
 }
@@ -157,7 +158,7 @@ h2 {
 }
 
 .saa-cert {
-    position: relative;
+    position: relative; /* Reinforces positioning context */
 }
 
 .loading-bar {
@@ -167,13 +168,13 @@ h2 {
     right: 15px;
     height: 4px;
     background: rgba(255, 153, 0, 0.3);
-    overflow: hidden;
+    overflow: hidden; /* Ensures the animation stays within bounds */
 }
 
 .loading-bar::before {
     content: '';
     position: absolute;
-    width: 50%;
+    width: 50%; /* Width of the moving bar */
     height: 100%;
     background: #ff9900;
     animation: loading 2s infinite ease-in-out;
