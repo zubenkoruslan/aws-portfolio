@@ -15,9 +15,9 @@ body {
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #1A1A1A, #2A2A2A, #1A1A1A, #204269); /* Subtle blue hint */
-    background-size: 400% 400%; /* Larger size for smooth animation */
-    animation: gradientLoop 15s ease-in infinite; /* Slow, subtle loop */
+    background: linear-gradient(135deg, #1A1A1A, #2A2A2A, #1A1A1A, #204269);
+    background-size: 400% 400%;
+    animation: gradientLoop 15s ease-in infinite;
     padding: 60px 20px;
     text-align: center;
     position: relative;
@@ -64,7 +64,7 @@ h1 {
     color: #4A90E2;
     text-decoration: none;
     margin: 0 15px;
-    font-size: 1em;
+    font-size: 1.5em; /* Slightly larger for icons */
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -120,11 +120,19 @@ p {
 }
 
 /* Projects */
+.projects {
+    display: flex; /* Horizontal layout */
+    flex-wrap: wrap; /* Wraps cards if needed */
+    gap: 20px; /* Space between cards */
+    justify-content: space-between; /* Distributes cards evenly */
+}
+
 .project-card {
     background: #2A2A2A;
     padding: 20px;
     border-radius: 10px;
-    margin-bottom: 20px;
+    flex: 1 1 calc(50% - 10px); /* Two cards per row, accounting for gap */
+    min-width: 300px; /* Minimum width for readability */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -202,6 +210,12 @@ footer {
     main { padding: 10px; }
     section { padding: 40px 0; }
     h2 { font-size: 1.5em; }
-    .project-card { padding: 15px; }
+    .projects { 
+        flex-direction: column; /* Vertical stack on mobile */
+    }
+    .project-card { 
+        flex: 1 1 100%; /* Full width on mobile */
+        padding: 15px;
+    }
     .cert-grid { grid-template-columns: 1fr; }
 }
